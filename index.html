@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 5 - 3ro Primaria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-P3-TM5</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 5 - 3ro primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 5 - 3ero de Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,377 +38,404 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 5: Decidiendo y Recordando con el Micro:bit</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <ul>
-                                        <li><strong>Objetivo general de la sesión:</strong> Que los estudiantes creen programas con decisiones múltiples y memoria, comprendiendo la relación conceptual entre variables, datos y memoria en las máquinas.</li>
-                                        <li>Usar estructuras lógicas complejas: <strong>SI, SINO SI, SINO</strong>.</li>
-                                        <li>Comprender qué son las <strong>variables</strong> y cómo usarlas para almacenar <strong>datos</strong>.</li>
-                                        <li>Utilizar <strong>variables</strong> para contar eventos (presiones de botón).</li>
-                                        <li>Entender las <strong>variables</strong> como la "<strong>memoria</strong>" de las máquinas para guardar "<strong>datos</strong>".</li>
-                                    </ul>
-                                    <strong>Secuencia Didáctica de la Misión:</strong>
-                                    <ul>
-                                        <li><strong>⚡ Actividad 1:</strong> Saludo de I.A. con todos</li>
-                                        <li><strong>⚡ Actividad 2:</strong> I Can Statement + Ejemplificación</li>
-                                        <li><strong>⚡ Actividad 3:</strong> AI GYM</li>
-                                        <li><strong>⚡ Actividad 4:</strong> Brain Spark</li>
-                                        <li><strong>⚡ Actividad 5:</strong> Gnius STORM (Think-Pair-Share)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Proyecto en <strong>Micro:bit</strong> que utiliza <strong>variables</strong> para contar (ej. un contador de puntos) y <strong>lógica condicional compleja (SI...SINO SI...SINO)</strong> para reaccionar a diferentes entradas de botones.</li>
-                                        <li>Participación en la discusión sobre <strong>variables</strong> como "<strong>memoria</strong>" y "<strong>datos</strong>" para las máquinas y la <strong>IA</strong>.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
-                                        <li>Presentación de la sesión (16 diapositivas).</li>
-                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
-                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para esta sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar conexión a internet.</li>
-                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (MakeCode).</li>
-                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (Micro:bits).</li>
-                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
-                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
-                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional el proyecto de ejemplo (Micro:bit con contador de puntos o semáforo simple) para la demostración en la Actividad 2.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Usar el micro:bit para crear variables y aumentar/disminuir valores para contar eventos y comprender cómo las máquinas usan datos y memoria para tomar decisiones con alternativas.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Enséñame qué es una variable como “memoria” del Micro:bit y por qué los números son datos. Explícame cómo funcionan las decisiones con SINO y SINO SI. Luego guíame a leer un GCS donde el Micro:bit cuente cuántas veces presiono un botón, guarde ese número en una variable y lo muestre en pantalla.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Memoria y Datos: Es como una mochila donde el robot guarda números importantes para recordarlos después y decidir qué hacer.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar el micro:bit para crear una memoria digital que cuente cosas.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes botones y valores de aumento para entender las limitaciones de la memoria.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Micro:bit (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/)</label>
+                        <label><input type="checkbox"> Cables USB o porta baterías</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para esta misión no se requieren extensiones adicionales.</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> No doblar, verificar batería, desconectar al terminar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre variables y memoria digital (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el micro:bit no responde:</strong> Verificar batería o conexión USB. Intentar descargar el programa nuevamente.</li><li><strong>Si el contador no aumenta:</strong> Revisar que la variable esté cambiando de valor dentro del bloque del botón.</li><li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
-                <p>El chatbot da la bienvenida y genera entusiasmo por la nueva aventura tecnológica, introduciendo el concepto de "memoria" y decisiones más inteligentes.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos con energía, introduce brevemente la emoción de la misión del día sin revelar detalles, e instrúyeles claramente cómo activar a Xolo con sus gustos/intereses.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola, pensadores de la IA! 👋 Hasta ahora, nuestro <strong>Micro:bit</strong> reacciona cuando presionamos un botón, ¡pero solo puede hacer una cosa por cada botón! <strong>¿Y si queremos que decida entre varias opciones, o que 'recuerde' cuántas veces hemos presionado algo?</strong> ¡Hoy vamos a darle a nuestro <strong>Micro:bit</strong> una <strong>'memoria'</strong> y la capacidad de tomar <strong>decisiones más inteligentes</strong>! Antes de empezar, vamos a activar a nuestro amigo <strong>Xolo</strong>. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. <strong>Por ejemplo: 'Hola Xolo, soy [Nombre] y mis gustos son [los deportes y la naturaleza]'.</strong>"</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
-                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Fantástico! Veo que <strong>Xolo</strong> ya les está respondiendo y está listo para esta aventura de <strong>decisiones</strong> y <strong>memoria</strong>. <strong>Si alguien no ha recibido respuesta de Xolo, levante la mano para ayudarle.</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "Hoy le daremos memoria a sus micro:bit".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Variables y toma de decisiones con datos..</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A crear una memoria digital para que el micro:bit recuerde números.</p>
+                        <p><strong>Aplicación real:</strong> Los marcadores deportivos en los estadios usan esta tecnología para recordar el puntaje de cada equipo.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
-                <p>Presentar el objetivo de la clase y el concepto de decisiones complejas y memoria con el Micro:bit.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: I Can Statement + Ejemplificación ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 3) Introduce el concepto principal de la sesión con una analogía o ejemplo del mundo real, preparando el terreno para el objetivo de aprendizaje.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Imaginemos un juego donde cada vez que presiono un botón, gano un punto, y quiero ver mi <strong>puntuación</strong>. O un <strong>semáforo</strong> que cambia de color: si no está en verde, ¿se pone en amarillo? ¿Y si no es amarillo, se pone en rojo? ¡Necesitamos que el <strong>Micro:bit</strong> pueda <strong>elegir entre muchas opciones</strong> y además <strong>recordar el puntaje</strong>!</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Descripción General ⏰ 2 minutos</h3>
-                            <p>Muestra TU Micro:bit con TU proyecto de ejemplo ya cargado y funcionando (ej. contador de puntos o semáforo simple). Esta es una demostración en vivo, no se proyecta diapositiva.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Para que vean una de las muchas cosas que podemos hacer hoy, les voy a mostrar un proyecto que yo mismo preparé. Miren mi dispositivo: (Muestra el dispositivo funcionando). Yo le pedí que (describe aquí brevemente la acción principal de tu proyecto, ej: 'llevara la cuenta de un juego y reaccionara a los botones'). <strong>¿Ven cómo podemos usar los conceptos de hoy para crear algo que toma decisiones y recuerda?</strong> Mi <strong>'idea'</strong> fue: (describe aquí TU idea/vibe personal para el proyecto que estás mostrando, ej: 'quería un marcador simple para mis juegos de mesa').</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Desglose (Sensores) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Presenta formalmente el 'I Can Statement' y conecta el ejemplo mostrado con lo que los alumnos crearán.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo el micro:bit guarda números usando variables.</li>
+                            <li>Introduce el concepto de memoria y toma de decisiones con alternativas.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar el micro:bit para guardar y mostrar números.</li>
+                            <li>Aprender sobre cómo los datos ayudan a los robots a decidir.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Así como mi <strong>Micro:bit</strong> toma <strong>decisiones</strong> y <strong>recuerda</strong>, ¡ustedes hoy harán algo muy similar! Al final de la clase, podrán decir con confianza: '<strong>Yo puedo hacer que mi Micro:bit tome decisiones más complejas con varias opciones y use variables para recordar y contar números, usando mi plan (el GCS) y la ayuda de la IA.</strong>' ¡Vamos a ello!</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el micro:bit para guardar datos y tomar decisiones.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a aprender algo increíble: ¡cómo darle memoria a un robot! Abran el chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo el micro:bit puede guardar números en su 'mochila' de memoria llamada variable. Pongan mucha atención a cómo funcionan los números como datos. Si algo no queda claro, ¡pregúntenle a XOLO! Él está aquí para ayudarlos a entender todo perfectamente.</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
-                <p>Los alumnos interactúan con Xolo para entender la lógica SI...SINO SI...SINO y el uso de variables como "memoria".</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: AI GYM ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 5) Presenta el A.I. GYM y da una instrucción clara a los alumnos sobre cómo pedir la información a Xolo, incluyendo su perfil y los conceptos del día.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Genios, es momento de entrar al <strong>A.I. GYM</strong>! 🧠💪 <strong>Xolo</strong>, nuestro <strong>copiloto IA</strong>, nos va a explicar los <strong>conceptos clave</strong> de hoy: cómo tomar <strong>decisiones</strong> con <strong>'SI...SINO SI...SINO'</strong> y cómo usar <strong>'variables'</strong> para que el <strong>Micro:bit recuerde</strong> cosas. Para que la explicación sea personalizada para ustedes, escriban en el chat el siguiente <strong>comando</strong>: <strong>"Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes sobre la "memoria" y los "datos" en las máquinas. Explícame cómo usar las variables en la micro:bit para contar presiones de botones y cómo usar la lógica "SINO" y "SINO SI" para tomar decisiones más complejas."</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: AI GYM ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositivas 6 y 7) Monitorea a los alumnos mientras interactúan con Xolo y reciben la explicación. Fomenta que hagan preguntas de seguimiento.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los micro:bits conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique el uso de variables y contadores.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar variables como contadores.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Conectar el micro:bit a la batería y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a idear un proyecto aplicado con vibe (por ejemplo: “contador de puntos”, “marcador”, “medidor de energía”). Quiero que el Micro:bit cuente presiones y muestre el número. Genera el GCS usando variable + aumentar valor + mostrar número e indícame cómo montarlo en bloques de MakeCode."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras los alumnos interactúan con <strong>Xolo</strong>) ¡Excelente! <strong>Xolo</strong> les está explicando que con <strong>'SI...SINO SI...SINO'</strong> el <strong>Micro:bit</strong> puede tener un <strong>'Plan A', 'Plan B' y 'Plan C'</strong>. Y que las <strong>'variables'</strong> son como <strong>cajitas mágicas</strong> para guardar números, ¡la <strong>memoria del Micro:bit</strong>! Les contará cómo <strong>fijar</strong>, <strong>mostrar</strong> y <strong>aumentar variables</strong>, y que son cruciales para que las <strong>IAs 'aprendan'</strong> de los <strong>datos</strong>.</p>
-                                <p class="dialogue assistant">Para que vean cómo se usan estos conceptos en un <strong>plan (el GCS)</strong>, Xolo podría mostrarles un ejemplo como este para un <strong>contador de puntos</strong> sencillo:</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">
-AL INICIO:
-    fijar variable "puntos" a 0 // La cajita empieza en cero
-    mostrar número variable "puntos"
-
-POR SIEMPRE:
-    SI (botón A presionado):
-        aumentar variable "puntos" en 1 // Sumamos 1 punto
-        mostrar número variable "puntos"
-        ESPERAR 0.2 segundos // Para que no cuente muchas veces por una sola pulsación
-    SINO SI (botón B presionado):
-        mostrar texto "DECISION B!" // Ejemplo de otra decisión
-        ESPERAR 0.5 segundos
-    SINO:
-        // Si no se presiona nada, podemos limpiar la pantalla o mostrar algo por defecto
-        limpiar pantalla
-    FIN SI
-                                </pre>
-                                <p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle directamente a <strong>Xolo</strong>! <strong>Prueben con: <br>
-                                'Xolo, ¿puedes darme un ejemplo de SI...SINO SI...SINO con [sus gustos/intereses]?'<br>
-                                '¿Cómo sabe la variable qué número guardar?'<br>
-                                'Si una IA aprende de datos, ¿qué tipo de "datos" guarda en sus variables?'</strong></p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El micro:bit muestra el número correcto cada vez que presionas el botón?</li>
+                            <li>¿Qué pasa si presionas el botón muy rápido muchas veces seguidas?</li>
+                            <li>¿Funciona igual si usas el botón A que si usas el botón B?</li>
+                            <li>¿Por qué es importante que el micro:bit tenga 'memoria' para poder contar?</li>
+                            <li>Si el micro:bit tiene que elegir entre dos acciones usando SINO, ¿cómo usa los datos para decidir?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a usar lo que aprendimos con XOLO para inventar algo útil. Imaginen que necesitan un contador de puntos para un juego o un medidor de energía. El flujo es sencillo: primero ideen con XOLO, luego elijan un VIBE, reciban su GCS y pásenlo a bloques en MakeCode. Por ejemplo, podrían hacer un marcador para un partido de fútbol que aumente cuando metan gol. Experimenten con las preguntas que ven en pantalla. Al terminar, entreguen sus micro:bits con cuidado. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con un contador básico. ¿Puedes enseñarme cómo hacer que mi micro:bit reste puntos si presiono otro botón?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
-                <p>Los alumnos diseñan y programan su proyecto de contador de puntos o similar, usando variables y lógica condicional compleja.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Brain Spark ⏰ 1 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Presenta la actividad como la fase creativa principal de la sesión, generando entusiasmo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo, genios! Ahora vamos a la parte más emocionante de nuestra misión, el <strong>Brain Spark</strong>. Aquí es donde cada uno de ustedes se convierte en <strong>inventor</strong>, usando lo que aprendimos para crear su propio proyecto y probarlo en el mundo real con el <strong>Micro:bit</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Brain Spark ⏰ 2 minutos</h3>
-                            <p>Anima a los alumnos a pensar en su propio proyecto, basándose en los conceptos del día. El objetivo es la libre exploración de ideas. Recuerda a las parejas que el Micro:bit se comparte y deberán alternar para programar.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Ahora que ya saben sobre <strong>decisiones múltiples</strong> y <strong>variables</strong>, <strong>¿qué proyecto se les ocurre?</strong> <strong>¿Un contador de puntos para un juego?</strong> <strong>¿Un sistema que reaccione de tres formas diferentes a los botones?</strong> <strong>¿Un marcador que recuerde algo?</strong> Tómense un minuto para pensar en su propia <strong>'idea'</strong>. Recuerden que, aunque están pensando individualmente su idea, el <strong>Micro:bit</strong> es compartido por la pareja, así que luego tendrán que turnarse para programar. <strong>Si no se les ocurre nada, ¡no hay problema! Escriban en el chat con Xolo el comando exacto: 'Exploremos ideas juntos para un proyecto con variables y decisiones múltiples'.</strong>"</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Brain Spark ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Guía a los alumnos sobre cómo comunicar su idea a Xolo para obtener un plan (el GCS). Mientras los alumnos escriben y discuten sus ideas con Xolo, asegúrate de que cada pareja tenga su Micro:bit.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>¿Ya tienen su 'idea' para el proyecto de decisiones y memoria?</strong> ¡Genial! Ahora, vamos a pedirle a <strong>Xolo</strong> que nos ayude a crear el <strong>'plan' (el GCS)</strong>. <strong>Describan su 'idea' a Xolo de la forma más clara posible. Por ejemplo, si su 'idea' es: 'Quiero que mi Micro:bit sea un contador de puntos. Cuando presiono el botón A, quiero que aumente un punto y muestre el total. Cuando presiono el botón B, quiero que el contador vuelva a cero. Y si no estoy presionando ningún botón, que muestre una cara neutral.'</strong></p>
-                                <p class="dialogue assistant">Basado en esa petición, <strong>Xolo</strong> podría generar un <strong>'plan' (el GCS)</strong> como este. ¡Fíjense bien en cómo se estructura!</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">
-AL INICIO:
-    // Inicializamos la variable 'puntos' a cero al inicio del programa
-    fijar variable "puntos" a 0
-    mostrar número variable "puntos" // Mostramos el 0 inicial
-
-POR SIEMPRE:
-    SI (botón A presionado):
-        // Si el botón A es presionado, aumentamos los puntos y los mostramos
-        aumentar variable "puntos" en 1
-        mostrar número variable "puntos"
-        ESPERAR 0.2 segundos // Pequeña pausa para evitar conteo múltiple
-    SINO SI (botón B presionado):
-        // Si el botón B es presionado, reiniciamos los puntos a cero y los mostramos
-        fijar variable "puntos" a 0
-        mostrar número variable "puntos"
-        ESPERAR 0.2 segundos
-    SINO:
-        // Si ningún botón está presionado, mostramos la cara neutral (o algo por defecto)
-        mostrar icono CARA_NEUTRA
-    FIN SI
-                                </pre>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Brain Spark ⏰ 13 minutos</h3>
-                            <p>(Proyectar Diapositiva 11) Da tiempo a los alumnos para que traduzcan el plan (el GCS) a bloques en MakeCode, prueben en el simulador y luego en el Micro:bit físico. Recordarles alternar el uso del Micro:bit en la pareja.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Manos a la obra, ingenieros! Tomen el <strong>'plan' (el GCS)</strong> que les dio <strong>Xolo</strong> y constrúyanlo con <strong>bloques</strong> en <strong>MakeCode</strong>. Busquen los bloques para crear <strong>variables</strong>, <strong>establecerlas</strong>, <strong>cambiarlas</strong>, y los bloques de <strong>'si...hacer...sino si...sino'</strong>. Prueben primero en el <strong>simulador</strong>. Cuando funcione, descarguen el <strong>código</strong> a su <strong>Micro:bit</strong> y véanlo cobrar vida. Recuerden que están trabajando en parejas, así que asegúrense de tomar turnos para programar y probar. <strong>Si el 'plan' (el GCS) de Xolo no funciona a la primera, ¡es una oportunidad para depurar! Descríbanle el error a Xolo para que puedan mejorar juntos.</strong></p>
-                            </div>
-                        </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué variables guardan bien los datos.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 5: Brain Spark ⏰ 1 minutos</h3>
-                            <p>Ofrece desafíos adicionales para los alumnos que terminen antes, basados en la sección 'Mejoras' de la escaleta.</p>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué datos guardó mejor tu micro:bit? ¿Qué te sorprendió de su memoria?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>¿Ya terminaron y su proyecto funciona de maravilla?</strong> ¡Felicidades! Aquí tienen un <strong>desafío extra</strong>: <strong>¿Puedes hacer que si los puntos llegan a 5, el Micro:bit muestre una corona?</strong> (Necesitarán otro <strong>SI</strong> dentro del <strong>SI (botón A)</strong> o después, evaluando la <strong>variable 'puntos'</strong>). ¡Consulten con <strong>Xolo</strong> cómo podrían modificar su <strong>'plan' (el GCS)</strong> para lograrlo!</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi micro:bit guardó números en su variable. Me sorprendió que podía recordar cuántas veces presioné el botón."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
-                <p>Los alumnos comparten sus contadores o proyectos con decisiones múltiples, y reflexionan sobre el uso de variables y la IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 12) Presenta la actividad como el momento de compartir y celebrar los proyectos, explicando brevemente la dinámica.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo, creadores! Han hecho un trabajo increíble en el <strong>Brain Spark</strong>. Ahora es el momento de compartir sus inventos en nuestro <strong>Gnius STORM</strong>. Esta es la parte donde aprendemos unos de otros. La dinámica será simple: primero pensaremos un poco en nuestro propio trabajo, luego lo compartiremos en parejas, y finalmente reflexionaremos todos juntos. <strong>¿Listos?</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 13) Da a los alumnos un momento corto para la reflexión individual sobre su propio proyecto.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. Antes de mostrar su proyecto, tómense 30 segundos para pensar en silencio. Miren su creación y reflexionen: <strong>¿Qué lograron que hiciera su Micro:bit con las variables y decisiones?</strong> <strong>¿Qué fue lo más interesante de darle "memoria"?</strong> <strong>¿Están orgullosos del resultado?</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 14) Indica a los alumnos que se junten en parejas, intercambien sus dispositivos y expliquen sus proyectos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien! Ahora, júntense con su compañero. Por turnos, cada uno va a mostrar su <strong>Micro:bit</strong> y explicará: '<strong>Mi Micro:bit [describe la acción, ej: cuenta puntos]. La 'idea' que tenía era que [comparte tu objetivo].</strong>' El compañero debe probar el dispositivo y escuchar con atención.</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 15) Guía a los alumnos para que se den retroalimentación mutua, usando plantillas de frases para asegurar que sea constructiva.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, la parte más importante de aprender en equipo: la <strong>retroalimentación</strong>. Después de probar el proyecto de su compañero, díganle algo positivo y una idea para mejorar. <strong>Usen estas frases:<br>
-                                'Lo que más me gustó de cómo tu Micro:bit usa las variables/decisiones fue...'<br>
-                                '¡Qué buena 'idea' que reaccione así [describe la reacción]!'<br>
-                                'Una idea para la próxima vez podría ser que también [sugiere una mejora o nueva función]...'</strong></p>
-                            </div>
-                        </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 16) Cierra la sesión conectando la experiencia práctica con los objetivos de aprendizaje y los conceptos clave del día.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hoy han dado un paso gigante! Han enseñado a su <strong>Micro:bit</strong> a <strong>'recordar'</strong> números usando <strong>variables</strong>, que son como las cajitas de <strong>memoria</strong>. ¡Y también han aprendido a tomar <strong>decisiones más complejas</strong> con <strong>SINO SI</strong> y <strong>SINO</strong>! Las <strong>variables</strong>, que guardan <strong>datos</strong>, son la clave de cómo las <strong>Inteligencias Artificiales</strong> pueden aprender. Una <strong>IA 'aprende de los datos'</strong> porque recuerda muchísimos números, palabras o imágenes (sus <strong>variables</strong>) y luego los analiza para decidir qué hacer o cómo responder. ¡Son unos genios haciendo que las máquinas sean más inteligentes! Lograron decir: '<strong>Yo puedo hacer que mi Micro:bit tome decisiones más complejas con varias opciones y use variables para recordar y contar números, usando mi plan (el GCS) y la ayuda de la IA.</strong>' ¡Felicidades, son unos verdaderos creadores de tecnología!</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
